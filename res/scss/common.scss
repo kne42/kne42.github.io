@@ -1,0 +1,78 @@
+$color-primary-dark: #B23C00;
+$color-primary-light: #FF5D0C;
+$color-primary: #FF5500;
+$color-inverse-dark: #00B2A6;
+$color-inverse-light: #00FFEE;
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    --text: $color-inverse-dark;
+    background-color: $color-inverse-light;
+    padding: 2rem;
+}
+
+.header {
+    background-image: linear-gradient(to right top,
+                                      rgba($color-inverse-dark, 0.8),
+                                      rgba($color-primary-light, 0.8)),
+                      url("../img/bkg/splash.jpg");
+    height: calc(100vh - 4rem);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100vh - 7em));
+}
+
+.header__textbox {
+    position: absolute;
+    top: calc(50% - 3.5em);
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: $color-inverse-light;
+    text-align: center;
+}
+
+.heading-main {
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.heading-main__title {
+    font-family: "Nunito", sans-serif;
+    font-size: 5em;
+    display: block;
+
+    &::after {
+        margin-top: 0.25em;
+        margin-bottom: 0.15em;
+        content: "";
+        width: 5em;
+        height: 0.05em;
+        background-color: $color-inverse-light;
+        position: relative;
+        display: block;
+        border-radius: 1px;
+        z-index: 1;
+    }
+}
+
+.heading-main__divider {
+    margin-left: -100000px; //hide this element while still leaving it selectable
+    display: block;
+}
+
+.heading-main__subtitle {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2em;
+    line-height: 1.25em;
+}
