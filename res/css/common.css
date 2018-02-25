@@ -1,7 +1,3 @@
-*, *::before, *::after {
-  margin: 0;
-  padding: 0; }
-
 :root {
   font-size: 62.5%; }
 
@@ -17,42 +13,38 @@ body {
   background-position: top;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100vh - 7em)); }
-
-.header__textbox {
-  position: absolute;
-  top: calc(50% - 3.5em);
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #00FFEE;
-  text-align: center; }
+  .header__textbox {
+    position: absolute;
+    top: calc(50% - 3.5em);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #00FFEE;
+    text-align: center; }
 
 .heading-main {
   font-weight: 400;
   font-size: 1.25rem; }
-
-.heading-main__title {
-  font-family: "Nunito", sans-serif;
-  font-size: 5em;
-  display: block; }
-  .heading-main__title::after {
-    margin-top: 0.25em;
-    margin-bottom: 0.15em;
-    content: "";
-    width: 5em;
-    height: 0.05em;
-    background-color: #00FFEE;
-    position: relative;
-    display: block;
-    border-radius: 1px;
-    z-index: 1; }
-
-.heading-main__divider {
-  margin-left: -100000px;
-  display: block; }
-
-.heading-main__subtitle {
-  font-family: "Open Sans", sans-serif;
-  font-size: 2em;
-  line-height: 1.25em; }
+  .heading-main__title {
+    font-family: "Nunito", sans-serif;
+    font-size: 5em;
+    display: block; }
+    .heading-main__title::after {
+      margin-top: 0.25em;
+      margin-bottom: 0.15em;
+      content: "";
+      width: 5em;
+      height: 0.05em;
+      background-color: #00FFEE;
+      position: relative;
+      display: block;
+      border-radius: 1px;
+      z-index: 1; }
+  .heading-main__divider {
+    margin-left: -100000px;
+    display: block; }
+  .heading-main__subtitle {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2em;
+    line-height: 1.25em; }
 
 /*# sourceMappingURL=common.css.map */
